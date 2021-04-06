@@ -5,4 +5,7 @@ for (const char of spinner) {
     process.stdout.write(char);
   }, delay);
   delay += 200;
+  setTimeout(() => {
+    process.stdout.write('\n');
+  }, spinner.length * 200);
 }
